@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">22</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_4Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 22
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_4Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_4Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">23</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_5Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 23
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_5Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_5Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">24</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_6Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 24
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_6Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_6Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">25</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_7Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 25
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_7Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_7Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">26</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_8Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 26
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_8Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_8Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">27</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_9Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 27
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_9Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_9Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">28</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_10Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 28
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_10Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_10Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">29</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_11Bit.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 29
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_11Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_11Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/Carry_Select_Adder.v</arg>&quot; Line <arg fmt="%d" index="2">30</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/MUX.v&apos; in file &quot;X:/EC551/LAB1/Carry_Select_Adder.v&quot; line 30
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;X:/EC551/LAB1/FA_64Bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">X:/EC551/LAB1/FA_64Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_32Bit.v&apos; in file &quot;X:/EC551/LAB1/FA_64Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_32Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/FA_8Bit.v&apos; in file &quot;FA_32Bit.v&quot; line 21
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">FA_8Bit.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;X:/EC551/LAB1/Full_Adder.v&apos; in file &quot;FA_8Bit.v&quot; line 21
+</arg>
+</msg>
+
+</messages>
+

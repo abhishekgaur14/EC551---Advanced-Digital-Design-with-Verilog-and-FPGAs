@@ -1,0 +1,3 @@
+verilog isim_temp "../../../../../systolic.v"
+verilog isim_temp "sys_testbecnh.v"
+verilog isim_temp "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

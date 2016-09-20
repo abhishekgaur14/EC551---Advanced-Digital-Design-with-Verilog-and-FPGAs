@@ -1,0 +1,3 @@
+verilog isim_temp "Carry_Select_Adder.v"
+verilog isim_temp "Carry_Select_Adder_Testbench.v"
+verilog isim_temp "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

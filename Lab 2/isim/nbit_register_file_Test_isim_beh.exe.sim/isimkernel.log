@@ -1,0 +1,28 @@
+Command line:
+   nbit_register_file_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  34134
+
+Fri Oct  2 19:42:43 2015
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 197.444 Meg
+
+ Total Signals          : 23
+ Total Nets             : 126
+ Total Signal Drivers   : 13
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 1375
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 275.038 Meg
+
+Fri Oct  2 19:44:13 2015
+

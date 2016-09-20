@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1335" delta="old" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 23: Port <arg fmt="%s" index="1">mainimg</arg> must not be declared to be an array
+</msg>
+
+<msg type="error" file="HDLCompiler" num="44" delta="old" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 37: <arg fmt="%s" index="1">k</arg> is not a constant
+</msg>
+
+<msg type="error" file="HDLCompiler" num="698" delta="new" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 37: Part-select of memory <arg fmt="%s" index="1">mainimg</arg> is not allowed
+</msg>
+
+<msg type="error" file="HDLCompiler" num="252" delta="new" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 37: Cannot assign <arg fmt="%s" index="1">an unpacked</arg> type to <arg fmt="%s" index="2">a packed</arg> type
+</msg>
+
+<msg type="error" file="HDLCompiler" num="44" delta="old" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 39: <arg fmt="%s" index="1">k</arg> is not a constant
+</msg>
+
+<msg type="error" file="HDLCompiler" num="698" delta="new" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 39: Part-select of memory <arg fmt="%s" index="1">mainimg</arg> is not allowed
+</msg>
+
+<msg type="error" file="HDLCompiler" num="252" delta="new" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 39: Cannot assign <arg fmt="%s" index="1">an unpacked</arg> type to <arg fmt="%s" index="2">a packed</arg> type
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\systolic\SA.v" Line 21: Module &lt;<arg fmt="%s" index="1">SA</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

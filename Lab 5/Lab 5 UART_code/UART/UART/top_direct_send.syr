@@ -1,0 +1,639 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: top_direct_send.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_direct_send.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_direct_send"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top_direct_send
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\transmitter.v" into library work
+Parsing module <transmitter>.
+Analyzing Verilog file "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\reciever.v" into library work
+Parsing module <receiver>.
+Analyzing Verilog file "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\receiver_sampler.v" into library work
+Parsing module <receiver_sampler>.
+Analyzing Verilog file "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v" into library work
+Parsing module <PLL_9_6M>.
+Analyzing Verilog file "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\clk_divide.v" into library work
+Parsing module <clk_divide>.
+Analyzing Verilog file "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\top_direct_send.v" into library work
+Parsing module <top_direct_send>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_direct_send>.
+
+Elaborating module <receiver_sampler>.
+
+Elaborating module <receiver>.
+
+Elaborating module <transmitter>.
+
+Elaborating module <clk_divide(CLK_RATE=9600000,BAUD_RATE=9600,SAMPLE_RATE=10)>.
+
+Elaborating module <PLL_9_6M>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="SYSTEM_SYNCHRONOUS",DIVCLK_DIVIDE=5,CLKFBOUT_MULT=24,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=50,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKIN_PERIOD=10.0,REF_JITTER=0.01)>.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v" Line 116: Assignment to clkout1_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v" Line 117: Assignment to clkout2_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v" Line 118: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v" Line 119: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v" Line 120: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v" Line 122: Assignment to locked_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_direct_send>.
+    Related source file is "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\top_direct_send.v".
+        CLK_RATE = 9600000
+        BAUD_RATE = 9600
+        SAMPLE_RATE = 10
+    Summary:
+	no macro.
+Unit <top_direct_send> synthesized.
+
+Synthesizing Unit <receiver_sampler>.
+    Related source file is "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\receiver_sampler.v".
+    Found 4-bit register for signal <zero_counter>.
+    Found 4-bit register for signal <one_counter>.
+    Found 1-bit register for signal <data_bit>.
+    Found 1-bit register for signal <prev_rx_clk>.
+    Found 4-bit adder for signal <one_counter[3]_GND_2_o_add_4_OUT> created at line 30.
+    Found 4-bit adder for signal <zero_counter[3]_GND_2_o_add_5_OUT> created at line 32.
+    Found 4-bit comparator greater for signal <one_counter[3]_INV_3_o> created at line 39
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <receiver_sampler> synthesized.
+
+Synthesizing Unit <receiver>.
+    Related source file is "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\reciever.v".
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <shift>.
+    Found 8-bit register for signal <data>.
+    Found 1-bit register for signal <sig>.
+    Found 4-bit adder for signal <state[3]_GND_3_o_add_8_OUT> created at line 52.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <receiver> synthesized.
+
+Synthesizing Unit <transmitter>.
+    Related source file is "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\transmitter.v".
+    Found 1-bit register for signal <available>.
+    Found 4-bit register for signal <state>.
+    Found 11-bit register for signal <shift>.
+    Found 4-bit adder for signal <state[3]_GND_4_o_add_8_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <transmitter> synthesized.
+
+Synthesizing Unit <clk_divide>.
+    Related source file is "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\clk_divide.v".
+        CLK_RATE = 9600000
+        BAUD_RATE = 9600
+        SAMPLE_RATE = 10
+    Found 1-bit register for signal <clk_uart_internal>.
+    Found 17-bit register for signal <counter_sampling>.
+    Found 1-bit register for signal <clk_sampling_internal>.
+    Found 17-bit register for signal <counter_uart>.
+    Found 17-bit adder for signal <counter_uart[16]_GND_6_o_add_5_OUT> created at line 64.
+    Found 17-bit adder for signal <counter_sampling[16]_GND_6_o_add_12_OUT> created at line 85.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+Unit <clk_divide> synthesized.
+
+Synthesizing Unit <PLL_9_6M>.
+    Related source file is "\\ad\eng\users\n\a\naved001\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\PLL_9_6M.v".
+    Summary:
+	no macro.
+Unit <PLL_9_6M> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 17-bit adder                                          : 2
+ 4-bit adder                                           : 4
+# Registers                                            : 15
+ 1-bit register                                        : 6
+ 11-bit register                                       : 1
+ 17-bit register                                       : 2
+ 4-bit register                                        : 4
+ 8-bit register                                        : 2
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 3
+ 11-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clk_divide>.
+The following registers are absorbed into counter <counter_sampling>: 1 register on signal <counter_sampling>.
+The following registers are absorbed into counter <counter_uart>: 1 register on signal <counter_uart>.
+Unit <clk_divide> synthesized (advanced).
+
+Synthesizing (advanced) Unit <receiver_sampler>.
+The following registers are absorbed into counter <zero_counter>: 1 register on signal <zero_counter>.
+The following registers are absorbed into counter <one_counter>: 1 register on signal <one_counter>.
+Unit <receiver_sampler> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 4
+ 17-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 3
+ 11-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance PLL/pll_base_inst in unit PLL/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <top_direct_send> ...
+
+Optimizing unit <receiver> ...
+
+Optimizing unit <transmitter> ...
+
+Optimizing unit <clk_divide> ...
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_6> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_7> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_10> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_8> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_9> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_11> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_12> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_13> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_14> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_15> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_sampling_16> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_10> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_9> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_11> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_12> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_13> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_14> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_15> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_div/counter_uart_16> (without init value) has a constant value of 0 in block <top_direct_send>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <clk_div/counter_uart_0> in Unit <top_direct_send> is equivalent to the following FF/Latch, which will be removed : <clk_div/counter_sampling_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_direct_send, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 63
+ Flip-Flops                                            : 63
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_direct_send.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 110
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 13
+#      LUT2                        : 17
+#      LUT3                        : 16
+#      LUT4                        : 8
+#      LUT5                        : 3
+#      LUT6                        : 19
+#      MUXCY                       : 13
+#      VCC                         : 1
+#      XORCY                       : 14
+# FlipFlops/Latches                : 63
+#      FD                          : 15
+#      FDC                         : 9
+#      FDCE                        : 17
+#      FDP                         : 1
+#      FDPE                        : 10
+#      FDR                         : 2
+#      FDRE                        : 8
+#      FDS                         : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 12
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 9
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              63  out of  18224     0%  
+ Number of Slice LUTs:                   81  out of   9112     0%  
+    Number used as Logic:                81  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     97
+   Number with an unused Flip Flop:      34  out of     97    35%  
+   Number with an unused LUT:            16  out of     97    16%  
+   Number of fully used LUT-FF pairs:    47  out of     97    48%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+clk_div/clk_uart_internal          | BUFG                     | 38    |
+clk_div/clk_sampling_internal      | NONE(sampler/prev_rx_clk)| 9     |
+PLL/pll_base_inst/CLKOUT0          | BUFG                     | 16    |
+-----------------------------------+--------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.480ns (Maximum Frequency: 287.352MHz)
+   Minimum input arrival time before clock: 4.418ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div/clk_sampling_internal'
+  Clock period: 2.691ns (frequency: 371.554MHz)
+  Total number of paths / destination ports: 28 / 16
+-------------------------------------------------------------------------
+Delay:               2.691ns (Levels of Logic = 1)
+  Source:            sampler/prev_rx_clk (FF)
+  Destination:       sampler/one_counter_0 (FF)
+  Source Clock:      clk_div/clk_sampling_internal rising
+  Destination Clock: clk_div/clk_sampling_internal rising
+
+  Data Path: sampler/prev_rx_clk to sampler/one_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.808  sampler/prev_rx_clk (sampler/prev_rx_clk)
+     LUT3:I0->O            8   0.205   0.802  sampler/rst_rx_clk_rising_OR_32_o1 (sampler/rst_rx_clk_rising_OR_32_o)
+     FDRE:R                    0.430          sampler/one_counter_0
+    ----------------------------------------
+    Total                      2.691ns (1.082ns logic, 1.609ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div/clk_uart_internal'
+  Clock period: 3.083ns (frequency: 324.338MHz)
+  Total number of paths / destination ports: 278 / 63
+-------------------------------------------------------------------------
+Delay:               3.083ns (Levels of Logic = 1)
+  Source:            transmitter/state_3 (FF)
+  Destination:       transmitter/shift_10 (FF)
+  Source Clock:      clk_div/clk_uart_internal rising
+  Destination Clock: clk_div/clk_uart_internal rising
+
+  Data Path: transmitter/state_3 to transmitter/shift_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             15   0.447   1.229  transmitter/state_3 (transmitter/state_3)
+     LUT6:I2->O           11   0.203   0.882  transmitter/_n0063_inv1 (transmitter/_n0063_inv)
+     FDPE:CE                   0.322          transmitter/shift_0
+    ----------------------------------------
+    Total                      3.083ns (0.972ns logic, 2.111ns route)
+                                       (31.5% logic, 68.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PLL/pll_base_inst/CLKOUT0'
+  Clock period: 3.480ns (frequency: 287.352MHz)
+  Total number of paths / destination ports: 193 / 16
+-------------------------------------------------------------------------
+Delay:               3.480ns (Levels of Logic = 3)
+  Source:            clk_div/counter_uart_1 (FF)
+  Destination:       clk_div/counter_uart_8 (FF)
+  Source Clock:      PLL/pll_base_inst/CLKOUT0 rising
+  Destination Clock: PLL/pll_base_inst/CLKOUT0 rising
+
+  Data Path: clk_div/counter_uart_1 to clk_div/counter_uart_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.864  clk_div/counter_uart_1 (clk_div/counter_uart_1)
+     LUT4:I0->O            3   0.203   0.651  clk_div/counter_uart[16]_GND_6_o_equal_5_o<16>_SW0 (N2)
+     LUT6:I5->O            8   0.205   0.803  clk_div/Mcount_counter_uart_val1 (clk_div/Mcount_counter_uart_val)
+     LUT2:I1->O            1   0.205   0.000  clk_div/counter_uart_8_rstpot (clk_div/counter_uart_8_rstpot)
+     FD:D                      0.102          clk_div/counter_uart_8
+    ----------------------------------------
+    Total                      3.480ns (1.162ns logic, 2.318ns route)
+                                       (33.4% logic, 66.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div/clk_uart_internal'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              3.171ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       sampler/data_bit (FF)
+  Destination Clock: clk_div/clk_uart_internal rising
+
+  Data Path: rst to sampler/data_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   1.222   1.519  rst_IBUF (rst_IBUF)
+     FDS:S                     0.430          sampler/data_bit
+    ----------------------------------------
+    Total                      3.171ns (1.652ns logic, 1.519ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div/clk_sampling_internal'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.178ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       sampler/one_counter_0 (FF)
+  Destination Clock: clk_div/clk_sampling_internal rising
+
+  Data Path: rst to sampler/one_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   1.222   1.520  rst_IBUF (rst_IBUF)
+     LUT3:I2->O            8   0.205   0.802  sampler/rst_rx_clk_rising_OR_32_o1 (sampler/rst_rx_clk_rising_OR_32_o)
+     FDRE:R                    0.430          sampler/one_counter_0
+    ----------------------------------------
+    Total                      4.178ns (1.857ns logic, 2.321ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PLL/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.418ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       clk_div/counter_uart_8 (FF)
+  Destination Clock: PLL/pll_base_inst/CLKOUT0 rising
+
+  Data Path: rst to clk_div/counter_uart_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   1.222   1.884  rst_IBUF (rst_IBUF)
+     LUT6:I0->O            8   0.203   0.803  clk_div/Mcount_counter_uart_val1 (clk_div/Mcount_counter_uart_val)
+     LUT2:I1->O            1   0.205   0.000  clk_div/counter_uart_8_rstpot (clk_div/counter_uart_8_rstpot)
+     FD:D                      0.102          clk_div/counter_uart_8
+    ----------------------------------------
+    Total                      4.418ns (1.732ns logic, 2.686ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div/clk_uart_internal'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            receiver/data_7 (FF)
+  Destination:       Rx_data<7> (PAD)
+  Source Clock:      clk_div/clk_uart_internal rising
+
+  Data Path: receiver/data_7 to Rx_data<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.616  receiver/data_7 (receiver/data_7)
+     OBUF:I->O                 2.571          Rx_data_7_OBUF (Rx_data<7>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PLL/pll_base_inst/CLKOUT0
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+PLL/pll_base_inst/CLKOUT0|    3.480|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_div/clk_sampling_internal
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+PLL/pll_base_inst/CLKOUT0    |    2.637|         |         |         |
+clk_div/clk_sampling_internal|    2.691|         |         |         |
+-----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_div/clk_uart_internal
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_div/clk_sampling_internal|    2.601|         |         |         |
+clk_div/clk_uart_internal    |    3.083|         |         |         |
+-----------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.12 secs
+ 
+--> 
+
+Total memory usage is 255712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

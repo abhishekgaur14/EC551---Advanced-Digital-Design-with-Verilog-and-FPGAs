@@ -1,0 +1,22 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o X:/EC551/LAB1/FA_64Bit_Testbench_isim_beh.exe -prj X:/EC551/LAB1/FA_64Bit_Testbench_beh.prj work.FA_64Bit_Testbench work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "X:/EC551/LAB1/FA_64Bit.v" into library work
+Analyzing Verilog file "X:/EC551/LAB1/FA_64Bit_Testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Full_Adder
+Compiling module FA_8Bit
+Compiling module FA_32Bit
+Compiling module FA_64Bit
+Compiling module FA_64Bit_Testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable X:/EC551/LAB1/FA_64Bit_Testbench_isim_beh.exe
+Fuse Memory Usage: 28068 KB
+Fuse CPU Usage: 498 ms

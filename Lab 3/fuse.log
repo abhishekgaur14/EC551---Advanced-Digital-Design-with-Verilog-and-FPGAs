@@ -1,0 +1,31 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "X:/My Documents/Xilinx Projects/lab3_1/CPU_tb_isim_beh.exe" -prj "X:/My Documents/Xilinx Projects/lab3_1/CPU_tb_beh.prj" "work.CPU_tb" "work.glbl" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "X:/My Documents/Xilinx Projects/lab3_1/cpu.v" into library work
+WARNING:HDLCompiler:327 - "sign_extend.v" Line 5: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "X:/My Documents/Xilinx Projects/lab3_1/cpu_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:327 - "sign_extend.v" Line 5: Concatenation with unsized literal; will interpret as 32 bits
+Completed static elaboration
+Compiling module MUX_2X1_32bit
+Compiling module MUX_2X1_5bit
+Compiling module Reg_32bit
+Compiling module MUX_2X1_16bit
+Compiling module memory
+Compiling module nbit_register_file
+Compiling module MUX_4X1_32bit
+Compiling module sign_extend
+Compiling module zero_extend
+Compiling module ALU
+Compiling module CPU
+Compiling module CPU_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 Verilog Units
+Built simulation executable X:/My Documents/Xilinx Projects/lab3_1/CPU_tb_isim_beh.exe
+Fuse Memory Usage: 28864 KB
+Fuse CPU Usage: 607 ms

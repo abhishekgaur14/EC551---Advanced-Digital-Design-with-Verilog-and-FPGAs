@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/sys_bench2_isim_beh.exe -prj X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/sys_bench2_beh.prj work.sys_bench2 work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/systolic.v" into library work
+Analyzing Verilog file "X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/sys_bench2.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/sys_bench2.v" Line 39: Size mismatch in connection of port <cbit_data>. Formal port size is 16-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module systolic
+Compiling module sys_bench2
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/sys_bench2_isim_beh.exe
+Fuse Memory Usage: 28036 KB
+Fuse CPU Usage: 514 ms

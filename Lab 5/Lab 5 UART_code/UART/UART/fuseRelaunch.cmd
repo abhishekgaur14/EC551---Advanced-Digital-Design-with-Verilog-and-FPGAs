@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/sys_bench2_isim_beh.exe" -prj "X:/Desktop/Lab5 551/Lab 5 UART_code/UART/UART/sys_bench2_beh.prj" "work.sys_bench2" "work.glbl" 

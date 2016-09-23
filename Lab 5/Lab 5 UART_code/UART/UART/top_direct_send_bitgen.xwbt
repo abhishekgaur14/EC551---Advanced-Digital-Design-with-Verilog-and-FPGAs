@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=X:\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\top_direct_send.ncd
-OUTFILE=X:\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART\top_direct_send.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=X:\Desktop\lab5\Lab 5 UART_code(1)\Lab 5 UART_code\UART\UART
-LICENSE=ISE
-USER_INFO=174135685_174135686_210570941_745
